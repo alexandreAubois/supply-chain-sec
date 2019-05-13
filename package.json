@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alexandreAubois/supply-chain-sec/issues"
   },
-  "homepage": "https://github.com/alexandreAubois/supply-chain-sec#readme"
+  "homepage": "https://github.com/alexandreAubois/supply-chain-sec#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
