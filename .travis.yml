@@ -1,7 +1,7 @@
 language: node_js
 
 env:
-  - IMAGE_NAME=868894423383.dkr.ecr.eu-west-1.amazonaws.com/isentest:1.0-$TRAVIS_BUILD_NUMBER
+  - IMAGE_NAME=530658460091.dkr.ecr.eu-west-1.amazonaws.com/isen:1.0-$TRAVIS_BUILD_NUMBER
 services:
   - docker
 
