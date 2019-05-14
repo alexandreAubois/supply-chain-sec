@@ -12,4 +12,4 @@ after_success:
   - docker build -t isen .
   - docker tag isen 530658460091.dkr.ecr.eu-west-1.amazonaws.com/isen
   - docker push 530658460091.dkr.ecr.eu-west-1.amazonaws.com/isen
-  - aws cloudformation update-stack --stack-name ecs-task --template-body file://ecs-task.yaml --parameters ImageName=530658460091.dkr.ecr.eu-west-1.amazonaws.com/isen
+  - aws cloudformation update-stack --template-body file://./ecs-task.yaml --stack-name ecs-task --region eu-west-1 --parameters ImageName=530658460091.dkr.ecr.eu-west-1.amazonaws.com/isen
