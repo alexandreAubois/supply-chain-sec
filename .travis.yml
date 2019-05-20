@@ -26,3 +26,4 @@ after_success:
   - kubectl config set clusters.default.certificate-authority-data "$KUBE_CLUSTER_SERVER"
   - kubectl config set users.default.username "$KUBE_CLIENT_ADMIN"
   - kubectl config set users.default.password "$KUBE_CLIENT_PASS"
+  - kubectl set image deployment/node-deployment node-deployment=530658460091.dkr.ecr.eu-west-1.amazonaws.com/isen:1.0-13
