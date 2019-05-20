@@ -3,6 +3,7 @@ clusters:
 - cluster:
     certificate-authority-data: certificate
     server: https://localhost:0000
+    insecure-skip-tls-verify: true
   name: default
 contexts:
 - context:
