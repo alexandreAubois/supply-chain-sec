@@ -22,6 +22,7 @@ after_success:
 #  - aws cloudformation deploy --template-file ./ecs-task.yaml --stack-name ecs-task --region eu-west-1 --parameter-override ImageName=$IMAGE_NAME
 #  - aws cloudformation update-stack --template-body file://./ecs-task.yaml --stack-name ecs-task --region eu-west-1 --parameters "ParameterKey=ImageName,ParameterValue=$IMAGE_NAME"
 
+  - cp config $HOME/.kube/config
   - kubectl config set clusters.default.certificate-authority-data "$KUBE_CLUSTER_CERTIFICATE"
   - kubectl config set clusters.default.certificate-authority-data "$KUBE_CLUSTER_SERVER"
   - kubectl config set users.default.username "$KUBE_CLIENT_ADMIN"
